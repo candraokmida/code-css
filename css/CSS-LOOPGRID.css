@@ -1,0 +1,54 @@
+/* ============= KangRian.com CSS LOOPGRID ============= */
+		* {
+			word-wrap: break-word!important;
+		}
+		.loopgrid {
+			display: block;
+			word-wrap: break-word;
+		}
+		.loopgrid:after {
+			content:' ';
+			display: block;
+			clear: both;
+		}
+		.loopgrid .item {
+			display: flex;
+			float: left;
+			margin:0 1.3% 1.5% 1.3%;
+			padding:2%;
+		}
+		.loopgrid.item5 .item {
+			width: 14%;
+		}
+		.loopgrid.item4 .item {
+			width: 19%;
+		}
+		.loopgrid.item3 .item {
+			width: 27.33%;
+		}
+		.loopgrid.item2 .item {
+			width: 44%;
+		}
+		.loopgrid.item1 .item {
+			float: none!important;
+			width: auto!important;
+		}
+		.loopgrid .itemwrap {
+			display: block;
+			margin: auto;
+		}
+
+		/* RESPONSIVE SETTING CSS LOOPGRID */
+		@media (max-width:960px) {
+			.loopgrid .item {
+			     width: 44%!important;
+			}
+		}
+		/* RESPONSIVE SETTING CSS LOOPGRID */
+		@media (max-width:480px) {
+			.loopgrid .item {
+				float: none!important;
+				width: auto!important;
+			}
+		}
+/* ============= KangRian.com CSS LOOPGRID ============= */
